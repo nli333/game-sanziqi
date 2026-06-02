@@ -1,0 +1,6 @@
+/out/
+/build/
+.vs/
+.vscode/
+CMakeCache.txt
+CMakeUserPresets.json
