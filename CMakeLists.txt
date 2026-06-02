@@ -1,22 +1,24 @@
-cmake_minimum_required(VERSION 3.14)
-project(MyFTXUIGame)
+cmake_minimum_required(VERSION 3.20)
+project(MyFTXUIGame LANGUAGES CXX)
 
-# 设定C++标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-#引入外部FTXUI库 文件夹放在项目外侧同级
-add_subdirectory("${CMAKE_SOURCE_DIR}/../FTXUI" build-ftxui)
+# 自动在线拉取FTXUI，无需本地放库
+include(FetchContent)
+FetchContent_Declare(
+  ftxui
+  GIT_REPOSITORY https://gitee.com/mirrors/FTXUI.git
+  GIT_TAG v6.1.9
+)
+FetchContent_MakeAvailable(ftxui)
 
-#编译所有源文件
-add_executable(MyFTXUIGame 
-main.cpp
-game.cpp
+add_executable(MyFTXUIGame
+    main.cpp
+    game.cpp
 )
 
-#链接ui库
-target_link_libraries(MyFTXUIGame
-    PRIVATE
+target_link_libraries(MyFTXUIGame PRIVATE
     ftxui::dom
     ftxui::screen
     ftxui::component
