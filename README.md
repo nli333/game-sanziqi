@@ -1,6 +1,8 @@
 # game-sanziqi
 README.md
 # 三子棋（井字棋）双人对战游戏
+<img width="329" height="750" alt="IMG_6016" src="https://github.com/user-attachments/assets/f062abfe-ee1d-4cca-bc43-a2cb1b3d34e5" />
+
 ## 一、项目介绍
 ### 项目概述
 本项目基于 **C++17 + FTXUI终端图形库** 开发一款控制台双人三子棋小游戏，严格采用C++工程规范：**头文件(.hpp)与源文件(.cpp)分离**，模块化拆分游戏逻辑与界面代码，告别单文件堆砌代码，符合C++面向对象课程作业规范。
