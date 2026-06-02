@@ -23,25 +23,25 @@ MyFTXUIGame/
 ```bash
 git clone https://github.com/你的用户名/MyFTXUIGame.git
 cd MyFTXUIGame
-Windows(Visual Studio)
+##Windows(Visual Studio)
 VS直接打开项目文件夹，软件自动识别CMake配置；
 编译选型x64-Debug，生成项目；
 运行程序：点击格子落子，点击【重新开局】开启新对局。
-Linux
+##Linux
 mkdir build && cd build
 cmake ..
 make
 ./MyFTXUIGame
-项目功能
+##项目功能
 双人轮流落子，落子后自动切换玩家；
 已有棋子的格子无法重复点击；
 对局结束自动判定X胜/O胜/平局并顶部提示；
 一键重置游戏，清空棋盘恢复初始状态。
-贡献指南
+##贡献指南
 点击仓库右上角Fork，将项目复制到自己的GitHub账号；
 把副本代码下载到本地，在本地修改代码；
 修改完成自测编译运行无误，推送至自己的远程仓库；
 在GitHub提交Pull Request，等待代码审核合并到主仓库。
-开源协议
+##开源协议
 MIT License，可自由学习、修改、商用。
 直接全选复制粘贴到README.md即可，把链接里`你的用户名`替换成你自己github名字。
