@@ -26,13 +26,13 @@ README.md
 必备编译环境：
 C++17标准编译器：GCC8+/Clang/MinGW/VS2019及以上
 CMake ≥ 3.20
-Git（CMake自动拉取FTXUI需要Git环境）
-支持 Windows / Linux / macOS 全平台终端编译运行。
-2. 编译&运行
-Linux / macOS / GitBash 通用步骤
+本项目使用 CMake 3.20+ 构建，**CMake会自动从Gitee镜像拉取FTXUI v6.1.9，不用手动安装依赖库**。
 
 ### 2. 编译&运行
-1. 下载压缩包并解压，使用Visual Studio打开项目文件夹，编译配置选择 `x64-Debug`；
+1. 拉取源码
+```bash
+git clone https://github.com/你的用户名/MyFTXUIGame.git
+cd MyFTXUIGame下载压缩包并解压，使用Visual Studio打开项目文件夹，编译配置选择 `x64-Debug`；
 2. VS自动解析CMake配置，等待依赖加载完成，点击【生成】构建可执行程序；
 3. 生成完毕后启动程序即可开始游戏。
 
