@@ -19,7 +19,6 @@ README.md
 ├── CMakeLists.txt  // CMake编译配置脚本
 ├── .gitignore      // 忽略编译缓存、临时文件配置
 └── README.md       // 项目说明文档
-> FTXUI第三方库不存入代码仓库，需使用者本地额外配置。
 
 ## 二、使用说明
 ### 1. 环境准备
